@@ -1,4 +1,4 @@
-package com.jzweb.httputils;
+package com.jzweb.httputils.vo;
 
 /**
  * @author Ryan
