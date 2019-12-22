@@ -5,7 +5,7 @@ package com.jzweb.httputils.vo;
  * @version 1.0
  * @date 12/21/2019
  */
-public class ServletCfg {
+public class ApiConfig {
     private String remoteUrl;
     private String clazz;
     private String methods;
