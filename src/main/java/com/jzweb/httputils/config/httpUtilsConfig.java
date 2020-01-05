@@ -1,6 +1,6 @@
 package com.jzweb.httputils.config;
 
-import com.jzweb.httputils.vo.ApiConfig;
+import com.jzweb.httputils.vo.ApiManage;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
@@ -18,13 +18,13 @@ import java.util.List;
 @ConfigurationProperties(prefix = "http")
 public class httpUtilsConfig {
 
-    private List<ApiConfig> configs = new ArrayList<>();
+    private List<ApiManage> configs = new ArrayList<>();
 
-    public List<ApiConfig> getConfigs() {
+    public List<ApiManage> getConfigs() {
         return configs;
     }
 
-    public void setConfigs(List<ApiConfig> configs) {
+    public void setConfigs(List<ApiManage> configs) {
         this.configs = configs;
     }
 }

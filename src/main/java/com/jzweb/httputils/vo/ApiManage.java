@@ -5,12 +5,13 @@ package com.jzweb.httputils.vo;
  * @version 1.0
  * @date 12/21/2019
  */
-public class ApiConfig {
+public class ApiManage {
     private String remoteUrl;
     private String clazz;
     private String methods;
     private Boolean cache;
     private Boolean state;
+    private String salt;
 
     public String getRemoteUrl() {
         return remoteUrl;
@@ -52,14 +53,23 @@ public class ApiConfig {
         this.state = state;
     }
 
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
     @Override
     public String toString() {
-        return "ServletConfig{" +
+        return "ApiConfig{" +
                 "remoteUrl='" + remoteUrl + '\'' +
                 ", clazz='" + clazz + '\'' +
                 ", methods='" + methods + '\'' +
                 ", cache=" + cache +
                 ", state=" + state +
+                ", salt='" + salt + '\'' +
                 '}';
     }
 }
