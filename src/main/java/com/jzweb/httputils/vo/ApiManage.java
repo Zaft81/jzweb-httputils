@@ -9,8 +9,8 @@ public class ApiManage {
     private String remoteUrl;
     private String clazz;
     private String methods;
-    private Boolean cache;
-    private Boolean state;
+    private Boolean cache = Boolean.FALSE;
+    private Boolean state = Boolean.TRUE;
     private String salt;
     private String charset = "utf-8";
 
