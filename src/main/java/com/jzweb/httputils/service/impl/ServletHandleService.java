@@ -1,7 +1,11 @@
 package com.jzweb.httputils.service.impl;
 
 import com.jzweb.httputils.service.ActualHandleService;
+import com.jzweb.httputils.vo.ApiManage;
+import com.jzweb.httputils.vo.ParamVO;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 /**
@@ -12,4 +16,13 @@ import org.springframework.stereotype.Service;
 @Service("servlet")
 public class ServletHandleService extends BaseHandleService implements ActualHandleService {
 
+    @Override
+    public Object handle(String company, ApiManage api, List<ParamVO> params) throws RuntimeException {
+        return null;
+    }
+
+    @Override
+    public Object getFromCache(String company, ApiManage api, List<ParamVO> params) throws RuntimeException {
+        return null;
+    }
 }

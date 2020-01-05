@@ -12,6 +12,7 @@ public class ApiManage {
     private Boolean cache;
     private Boolean state;
     private String salt;
+    private String charset = "utf-8";
 
     public String getRemoteUrl() {
         return remoteUrl;
@@ -59,6 +60,14 @@ public class ApiManage {
 
     public void setSalt(String salt) {
         this.salt = salt;
+    }
+
+    public String getCharset() {
+        return charset;
+    }
+
+    public void setCharset(String charset) {
+        this.charset = charset;
     }
 
     @Override

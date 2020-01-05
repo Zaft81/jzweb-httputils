@@ -6,6 +6,7 @@ package com.jzweb.httputils.http;
  * @date 1/5/2020
  */
 public class HttpUtils {
+    public static final String DEF_CHARSET = "utf-8";
     public static final String DOMAIN = "";
     public static final String PATTERN = ".jhtml";
     public static final String ENCODING = "utf-8";
