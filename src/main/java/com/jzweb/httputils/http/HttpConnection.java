@@ -30,7 +30,7 @@ public class HttpConnection {
 
     public String getEncodeing() {
         if(this.encodeing == null || this.encodeing.length()==0) {
-            return HttpUtils.ENCODING;
+            return HttpConstant.ENCODING;
         } else {
             return this.encodeing;
         }
@@ -60,7 +60,7 @@ public class HttpConnection {
         try {
             URL url = new URL(path);
             conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod(HttpUtils.METHOD_POST);
+            conn.setRequestMethod(HttpConstant.METHOD_POST);
             conn.setRequestProperty("ReqTime-Time", param.getReqTime());
             conn.setRequestProperty("auth-comp", authComp);
             //conn.setRequestProperty("Content-length", "" + bs.length);
@@ -117,13 +117,13 @@ public class HttpConnection {
         try {
             URL url = new URL(path);
             conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod(HttpUtils.METHOD_GET);
+            conn.setRequestMethod(HttpConstant.METHOD_GET);
             conn.setRequestProperty("ReqTime-Time", param.getReqTime());
             conn.setRequestProperty("auth-comp", authComp);
             conn.setDoOutput(true);
             conn.setDoInput(true);
             conn.setUseCaches(false);
-            conn.getOutputStream().write(param.getParamStr().getBytes(HttpUtils.ENCODING));
+            conn.getOutputStream().write(param.getParamStr().getBytes(HttpConstant.ENCODING));
             conn.getOutputStream().flush();
             conn.getOutputStream().close();
             ois = new ObjectInputStream(conn.getInputStream());

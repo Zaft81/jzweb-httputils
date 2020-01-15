@@ -1,6 +1,6 @@
 package com.jzweb.httputils.vo;
 
-import com.jzweb.httputils.http.HttpUtils;
+import com.jzweb.httputils.http.HttpConstant;
 
 /**
  * @author Ryan
@@ -14,7 +14,7 @@ public class ApiManage {
     private Boolean cache = Boolean.FALSE;
     private Boolean state = Boolean.TRUE;
     private String salt;
-    private String charset = HttpUtils.ENCODING;
+    private String charset = HttpConstant.ENCODING;
 
     public String getRemoteUrl() {
         return remoteUrl;
