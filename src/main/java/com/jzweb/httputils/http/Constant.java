@@ -5,7 +5,7 @@ package com.jzweb.httputils.http;
  * @version 1.0
  * @date 1/5/2020
  */
-public class HttpConstant {
+public class Constant {
     public static final String DEF_CHARSET = "utf-8";
     public static final String DOMAIN = "";
     public static final String PATTERN = ".jhtml";

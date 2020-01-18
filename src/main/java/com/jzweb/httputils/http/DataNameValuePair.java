@@ -36,6 +36,7 @@ public class DataNameValuePair {
         json.put(key, value);
         return this;
     }
+
     public DataNameValuePair setParam(String key, Object value) {
         json.put(key, value);
         return this;
@@ -49,20 +50,21 @@ public class DataNameValuePair {
     }
 
     public void sign() throws Exception {
-        signIn(null);
+        this.signIn(null);
     }
+
     public void sign(String encodeing) throws Exception {
-        signIn(encodeing);
+        this.signIn(encodeing);
     }
 
     private void signIn(String encodeing) throws Exception {
-        String info = json.size()==0? UUID.randomUUID().toString().substring(0, 4) : json.toString();
+        String info = json.size() == 0 ? UUID.randomUUID().toString().substring(0, 4) : json.toString();
         String allStr = info + getReqTime() + this.salt + this.token;
         String md5 = Signature.md5(allStr);
 
 
-        if(encodeing != null && encodeing.length()>0) {
-            putInParam("info", URLEncoder.encode(info,encodeing));
+        if (encodeing != null && encodeing.length() > 0) {
+            putInParam("info", URLEncoder.encode(info, encodeing));
         } else {
             putInParam("info", info);
         }

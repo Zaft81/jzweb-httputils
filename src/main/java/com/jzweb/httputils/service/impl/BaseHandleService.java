@@ -1,6 +1,6 @@
 package com.jzweb.httputils.service.impl;
 
-import com.jzweb.httputils.http.HttpConstant;
+import com.jzweb.httputils.http.Constant;
 import com.jzweb.httputils.security.MD5;
 import com.jzweb.httputils.vo.ApiManage;
 import com.jzweb.httputils.vo.ParamVO;
@@ -42,7 +42,7 @@ public class BaseHandleService {
      */
     protected String getCharset(ApiManage api) {
         if(api == null || StringUtils.isBlank(api.getCharset())) {
-            return HttpConstant.DEF_CHARSET;
+            return Constant.DEF_CHARSET;
         } else {
             return api.getCharset();
         }

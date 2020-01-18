@@ -38,7 +38,7 @@ public class HttpUtil {
         }
         //pair.setParam(Constant.ErpStructParam.REMOTE_STATUS_KEY, Constant.ErpStructParam.REMOTE_STATUS_VALUE);
         pair.setSalt(api.getSalt()).setReqTime(System.currentTimeMillis());
-        pair.setAuthKey(UUID.randomUUID().toString().split("-")[0]);//这个是用来骗人的，实际无用
+        pair.setAuthKey(UUID.randomUUID().toString().split("-")[0]);//干扰用
         pair.setParam("method", method);
         pair.setParam("clazz", clazz);
         conn.post(url, pair);
