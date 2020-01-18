@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface ActualHandleService {
     /**
-     * 传输数据
+     * 实际通讯
      *
      * @param company
      * @param api
@@ -18,7 +18,7 @@ public interface ActualHandleService {
     Object handle(String company, ApiManage api, List<ParamVO> params) throws RuntimeException;
 
     /**
-     * 缓存
+     * 优先从缓存，若缓存不存在，则再通过远程
      *
      * @param company
      * @param api
