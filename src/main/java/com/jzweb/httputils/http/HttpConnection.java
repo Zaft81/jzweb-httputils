@@ -95,12 +95,7 @@ public class HttpConnection {
         }catch(Exception e) {
             //result = e.getMessage();
             try {
-                if (ois != null) {
-                    ois.close();
-                }
-                if (conn != null) {
-                    conn.disconnect();
-                }
+                closeConnection(ois, conn);
             } catch (IOException ex) {
                 ex.printStackTrace();
                 throw ex;
@@ -133,12 +128,7 @@ public class HttpConnection {
         }catch(Exception e) {
             //result = e.getMessage();
             try {
-                if (ois != null) {
-                    ois.close();
-                }
-                if (conn != null) {
-                    conn.disconnect();
-                }
+                closeConnection(ois, conn);
             } catch (IOException ex) {
                 ex.printStackTrace();
                 throw ex;
@@ -146,6 +136,15 @@ public class HttpConnection {
             throw e;
         }
         return this;
+    }
+
+    private void closeConnection(ObjectInputStream ois,HttpURLConnection conn)throws IOException{
+        if (ois != null) {
+            ois.close();
+        }
+        if (conn != null) {
+            conn.disconnect();
+        }
     }
 
 

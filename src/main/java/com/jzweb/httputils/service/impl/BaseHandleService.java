@@ -32,7 +32,7 @@ public class BaseHandleService {
             }
         }
 
-        return MD5.sign(builder.toString(), SIGNKEY, "UTF-8");
+        return MD5.sign(builder.toString(), SIGNKEY, Constant.ENCODING);
     }
 
     /**
