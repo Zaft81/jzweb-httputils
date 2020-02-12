@@ -1,6 +1,6 @@
 package com.jzweb.httputils.service.impl;
 
-import com.jzweb.httputils.HttpUtil;
+import com.jzweb.httputils.http.HttpUtil;
 import com.jzweb.httputils.service.ActualHandleService;
 import com.jzweb.httputils.vo.ApiManage;
 import com.jzweb.httputils.vo.ParamVO;

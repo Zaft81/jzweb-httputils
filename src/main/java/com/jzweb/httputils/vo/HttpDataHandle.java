@@ -2,7 +2,7 @@ package com.jzweb.httputils.vo;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.jzweb.httputils.HttpUtil;
+import com.jzweb.httputils.http.HttpUtil;
 import org.apache.commons.lang3.StringUtils;
 
 /**

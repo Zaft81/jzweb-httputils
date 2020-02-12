@@ -1,4 +1,4 @@
-package com.jzweb.httputils;
+package com.jzweb.httputils.http;
 
 import com.jzweb.httputils.http.DataNameValuePair;
 import com.jzweb.httputils.http.HttpConnection;
