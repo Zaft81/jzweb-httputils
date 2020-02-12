@@ -9,9 +9,9 @@ public interface ActualHandleService {
     /**
      * 实际通讯
      *
-     * @param company
-     * @param api
-     * @param params
+     * @param company 公司编号
+     * @param api 接口设定
+     * @param params 参数
      * @return
      * @throws RuntimeException
      */
@@ -20,9 +20,9 @@ public interface ActualHandleService {
     /**
      * 优先从缓存，若缓存不存在，则再通过远程
      *
-     * @param company
-     * @param api
-     * @param params
+     * @param company 公司编号
+     * @param api 接口设定
+     * @param params 参数
      * @return
      * @throws RuntimeException
      */

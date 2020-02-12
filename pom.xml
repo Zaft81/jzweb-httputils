@@ -71,6 +71,14 @@
         </dependency>
 
 
+        <!-- webservice -->
+        <dependency>
+            <groupId>axis</groupId>
+            <artifactId>axis</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <!-- webservice over -->
+
 
 
     </dependencies>
