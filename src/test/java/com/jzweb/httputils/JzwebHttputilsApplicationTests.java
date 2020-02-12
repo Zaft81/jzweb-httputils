@@ -8,6 +8,18 @@ class JzwebHttputilsApplicationTests {
 
     @Test
     void contextLoads() {
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Hello lambda");
+            }
+        }).start();
+
+        new Thread(()->System.out.println("Hello lambda")).start();
+
+        new Thread(()->{System.out.println("Hello lambda");}).start();
+
     }
 
 }
