@@ -16,7 +16,7 @@ import java.util.List;
 @Configuration
 @PropertySource(value = "classpath:apiconfig-list.properties")
 @ConfigurationProperties(prefix = "http")
-public class ApiConfig {
+public class HttpApiProperties {
 
     private List<ApiManage> configs = new ArrayList<>();
 

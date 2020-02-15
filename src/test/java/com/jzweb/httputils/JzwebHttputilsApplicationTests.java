@@ -1,5 +1,6 @@
 package com.jzweb.httputils;
 
+import com.jzweb.httputils.config.HttpApiConfiguration;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -9,16 +10,7 @@ class JzwebHttputilsApplicationTests {
     @Test
     void contextLoads() {
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("Hello lambda");
-            }
-        }).start();
-
-        new Thread(()->System.out.println("Hello lambda")).start();
-
-        new Thread(()->{System.out.println("Hello lambda");}).start();
+        //System.out.println(HttpApiConfiguration.getApiMap().get("api01").toString());
 
     }
 

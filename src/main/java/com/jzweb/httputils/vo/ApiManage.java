@@ -8,6 +8,7 @@ import com.jzweb.httputils.http.Constant;
  * @date 12/21/2019
  */
 public class ApiManage {
+    private String code;
     private String remoteUrl;
     private String clazz;
     private String methods;
@@ -15,6 +16,14 @@ public class ApiManage {
     private Boolean state = Boolean.TRUE;
     private String salt;
     private String charset = Constant.ENCODING;
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
 
     public String getRemoteUrl() {
         return remoteUrl;
@@ -74,13 +83,15 @@ public class ApiManage {
 
     @Override
     public String toString() {
-        return "ApiConfig{" +
-                "remoteUrl='" + remoteUrl + '\'' +
+        return "ApiManage{" +
+                "code='" + code + '\'' +
+                ", remoteUrl='" + remoteUrl + '\'' +
                 ", clazz='" + clazz + '\'' +
                 ", methods='" + methods + '\'' +
                 ", cache=" + cache +
                 ", state=" + state +
                 ", salt='" + salt + '\'' +
+                ", charset='" + charset + '\'' +
                 '}';
     }
 }
