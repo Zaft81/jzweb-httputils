@@ -40,8 +40,7 @@ public class WebServiceHandleService extends BaseHandleService implements Actual
             }
             jsonData.add(json);
 
-            String result = send(api, jsonData.toString());
-            return result;
+            return send(api, jsonData.toString());
         } catch (Exception e) {
             logger.error(api.getRemoteUrl() + " webservice通信失败！", e);
             throw new RuntimeException(e);
