@@ -6,8 +6,8 @@
 @Autowired
 private HttpHandleService httpHandleService;
 
-
-Object obj = httpHandleService.handle(company,"",null);
+List<ParamVO> params = new ArrayList<>();
+Object obj = httpHandleService.handle(company,"",params);
 
 
 
