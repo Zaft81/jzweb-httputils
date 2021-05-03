@@ -28,11 +28,11 @@ public class HttpHandleServiceImpl implements HttpHandleService {
     @Override
     public Object handle(String compNo, String code, List<ParamVO> params) throws RuntimeException{
         if(StringUtils.isBlank(code)){
-            throw new RuntimeException(code + " :: 接口未设置");
+            throw new RuntimeException(code + ": api not setting");
         }
         ApiManage apiManage = HttpApiConfiguration.getApiMap().get(code);
         if(apiManage == null){
-            throw new RuntimeException(code + " :: 接口未设置");
+            throw new RuntimeException(code + " : api not setting");
         }
 
         return actualHandleServices.get(code).handle(compNo,apiManage,params);
