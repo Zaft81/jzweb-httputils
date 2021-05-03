@@ -30,7 +30,7 @@ public class ServletHandleService extends BaseHandleService implements ActualHan
             try {
                 boolean rtn = httpUtil.post(api.getRemoteUrl(), api.getClazz(),api.getMethods(), api,params);
                 String result = httpUtil.getResult();
-                logger.info("抛送完成！company: {}  apiCode: {}  返回信息: {}", company, api.getRemoteUrl(), result);
+                logger.info("throw finished！company: {}  apiCode: {}  return info: {}", company, api.getRemoteUrl(), result);
                 if(rtn) {
                     return result;
                 } else {
