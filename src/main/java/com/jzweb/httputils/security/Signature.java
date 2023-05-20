@@ -27,6 +27,4 @@ public class Signature {
         }
         return new String(resultCharArray);
     }
-
-
 }
