@@ -29,6 +29,9 @@ public class HttpApiConfiguration {
 
     }
 
+
+
+
     public static Map<String, ApiManage> getApiMap() {
         return apiMap;
     }
