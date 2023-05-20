@@ -35,8 +35,7 @@ public class MD5 {
         String mysign = DigestUtils.md5Hex(text);
         if(mysign.equals(sign)) {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
@@ -50,6 +49,7 @@ public class MD5 {
         if (charset == null || "".equals(charset)) {
             return content.getBytes();
         }
+
         try {
             return content.getBytes(charset);
         } catch (UnsupportedEncodingException e) {
