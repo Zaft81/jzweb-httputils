@@ -17,7 +17,6 @@ public class HttpConnection {
     private String result;
     private boolean rtn = false;
     private String encodeing = null;
-
     public HttpConnection() {}
     public HttpConnection(String authComp) {
         this.authComp = authComp;
@@ -72,6 +71,7 @@ public class HttpConnection {
             conn.setDoOutput(true);
             conn.setDoInput(true);
             conn.setUseCaches(false);
+
 
 
             PrintWriter out = new PrintWriter(new OutputStreamWriter(conn.getOutputStream(),getEncodeing()));
