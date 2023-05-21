@@ -20,8 +20,7 @@ public enum ApiManageModeEnum implements BaseMappingEnum {
      * 本地模拟测试
      */
     LocalTestApi("LocalTestApi","LocalTest");
-    private String code;
-    private String name;
+    private String code, name;
     private ApiManageModeEnum(String code, String name){
         this.code = code;
         this.name = name;
