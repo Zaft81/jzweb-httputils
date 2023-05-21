@@ -33,11 +33,8 @@ public class MD5 {
     public static boolean verify(String text, String sign, String key) {
         text = text + key;
         String mysign = DigestUtils.md5Hex(text);
-        if(mysign.equals(sign)) {
-            return true;
-        } else {
-            return false;
-        }
+
+        return mysign.equals(sign)? true : false;
     }
 
     /**
