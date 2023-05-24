@@ -77,15 +77,6 @@ public class HttpConnection {
             PrintWriter out = new PrintWriter(new OutputStreamWriter(conn.getOutputStream(),getEncodeing()));
             out.println(param.getParamStr());
             out.close();
-            /*BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream(),"GBK"));
-
-            if(encodeing == null || encodeing.length()==0) {
-                conn.getOutputStream().write(param.getParamStr().getBytes(HttpUtils.ENCODING));
-            } else {
-
-
-            	conn.getOutputStream().write(str1.getBytes());
-            }*/
 
             conn.getOutputStream().flush();
             conn.getOutputStream().close();
