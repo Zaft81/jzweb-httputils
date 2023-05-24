@@ -14,7 +14,6 @@ import java.util.UUID;
  * @date 1/5/2020
  */
 public class HttpUtil {
-
     //private String compCode;
     public static final String SUCCESS = "0";
     public static final String FAILED = "1";
