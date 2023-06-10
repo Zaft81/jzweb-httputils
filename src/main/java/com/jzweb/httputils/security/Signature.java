@@ -6,7 +6,7 @@ import java.security.NoSuchAlgorithmException;
 /**
  * @author Ryan
  * @version 1.0
- * @date 1/5/2020
+ * @date 1/5/2020s
  */
 public class Signature {
     public static String md5(String data) throws NoSuchAlgorithmException {

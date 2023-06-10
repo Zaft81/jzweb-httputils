@@ -66,8 +66,8 @@ public class HttpConnection {
             //conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
             //conn.setRequestProperty("Content-type", "application/text;charset=GBK");
             //conn.setRequestProperty("contentType", "GBK");
-            conn.setConnectTimeout(30000);
-            conn.setReadTimeout(30000);
+            conn.setConnectTimeout(120000);
+            conn.setReadTimeout(120000);
             conn.setDoOutput(true);
             conn.setDoInput(true);
             conn.setUseCaches(false);
